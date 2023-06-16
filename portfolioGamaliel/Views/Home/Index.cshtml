@@ -2,7 +2,225 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+
+<div id="proyectos"></div>
+<br>
+<br>
+<br>
+<div class="container-sm rounded bg-light ">
+    <div class="row  border-bottom border-3">
+        <div class="row  p-2">
+            <div class="col-12 d-flex justify-content-center">
+                <h3 class="display-3 ">Projects</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="row pb-4">
+        <div class="row pt-3">
+            <div class="col-12 col-sm-12 col-lg-6 pt-3 d-flex justify-content-center">
+                <a class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#Modal1">
+                    <img src="img/proy1.PNG" class="img-fluid" alt="">
+                    <br>
+                    Database project
+                </a>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-6 pt-3 d-flex justify-content-center">
+                <a class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#Modal2">
+                    <img src="img/proy2.PNG" class="img-fluid" alt="">
+                    <br>
+                    Systems software project
+                </a>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-12 pt-3 d-flex justify-content-center">
+                <a class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#Modal3">
+                    <img src="img/proy3.PNG" class="img-fluid" alt="">
+                    <br>
+                    Project evaluation system
+                </a>
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
 </div>
+<!-- Modal -->
+<div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Database project, this project was a school project and consisted of making a database system, the communication was through java and postgres, so that we could store basic
+                communication was through java and postgres so that we could store basic music information in several tables.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a href="https://github.com/gamadelgado60/javapostgres" type="button" class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                School project that consisted in the development of a small program that was able to lexically and syntactically analyze the sic-xe architecture,
+                this was developed with the help of c# together with a library called anltr to parse granmatica.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a href="https://github.com/gamadelgado60/WindowsFormsApp3" type="button" class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="Modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Project done by a team composed of two colleagues along with me which consists of a web page made for a client which had every few events in which judges have to evaluate the process was
+                The page optimized this and get the calculations in seconds once the judges give their verdicts, this being a project for a client I can not show the code.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<br>
+<br>
+<div class="container-fluid" style="background-color: #00486C;" id="skills">
+    <div class="container-sm">
+        <div class="row pt-3 pb-3">
+            <div class="col-12 d-flex justify-content-center  border-bottom border-3">
+                <h3 style="color: white;">Skills</h3>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-3 pt-3 d-flex justify-content-center border-3 ">
+                    <btn class="btn btn-outline-light" href="">
+                        <img src="img/Csharp_Logo.png" class="iconolng" alt="">
+                        <br>
+                        Csharp
+                    </btn>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 pt-3 d-flex justify-content-center ">
+                    <btn class="btn btn-outline-light" href="">
+                        <img src="img/htmlf.webp" class="iconolng" alt="">
+                        <br>
+                        HTML
+                    </btn>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 pt-3 d-flex justify-content-center">
+                    <btn class="btn btn-outline-light" href="">
+                        <img src="img/css.png" class="iconolng" alt="">
+                        <br>
+                        CSS
+                    </btn>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 pt-3 d-flex justify-content-center">
+                    <btn class="btn btn-outline-light" href="">
+                        <img src="img/java.png" class="iconolng" alt="">
+                        <br>
+                        JAVA
+                    </btn>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 pt-3 d-flex justify-content-center">
+                    <btn class="btn btn-outline-light" href="">
+                        <img src="img/bootsrap.png" class="iconolng" alt="">
+                        <br>
+                        Bootstrap
+                    </btn>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 pt-3 d-flex justify-content-center">
+                    <btn class="btn btn-outline-light" href="">
+                        <img src="img/laravel.png" class="iconolng" alt="">
+                        <br>
+                        laravel
+                    </btn>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 pt-3 d-flex justify-content-center">
+                    <btn class="btn btn-outline-light" href="">
+                        <img src="img/sql.png" class="iconolng" alt="">
+                        <br>
+                        SQL
+                    </btn>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 pt-3 d-flex justify-content-center">
+                    <btn class="btn btn-outline-light" href="">
+                        <img src="img/bash.png" class="iconolng" alt="">
+                        <br>
+                        Bash
+                    </btn>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+      </div>
+<br>
+<br>
+
+<div class="container-sm rounded bg-light " id="sobremi">
+    <div class="row border-bottom border-3">
+        <div class="row  p-2">
+            <div class="col-12 d-flex justify-content-center">
+                <h3 class="display-3 ">About me</h3>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <p> </p>
+        <br>
+    </div>
+    <div class="row">
+        <p>
+            Interests: in the short term I would like to learn more technologies and improve my mastery of some that I already know, for example
+            (Linux, microcontrollers, etc..) because I consider myself a curious and passionate person.
+        </p>
+    </div>
+    <br>
+    <div class="row">
+        <p>
+            Hobbies: <br>
+            -Play the electric bass <br>
+            -Read <br>
+            -Watch movies <br>
+        </p>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+

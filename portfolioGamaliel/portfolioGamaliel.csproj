@@ -6,4 +6,28 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\img\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\img\bash.png" />
+    <None Include="wwwroot\img\bootsrap.png" />
+    <None Include="wwwroot\img\Csharp_Logo.png" />
+    <None Include="wwwroot\img\css.png" />
+    <None Include="wwwroot\img\fondo.png" />
+    <None Include="wwwroot\img\fondo2.jpg" />
+    <None Include="wwwroot\img\fondo2w.png" />
+    <None Include="wwwroot\img\htmlf.webp" />
+    <None Include="wwwroot\img\java.png" />
+    <None Include="wwwroot\img\laravel.png" />
+    <None Include="wwwroot\img\pefilnew.png" />
+    <None Include="wwwroot\img\perfil.jpg" />
+    <None Include="wwwroot\img\prog.webp" />
+    <None Include="wwwroot\img\proy1.PNG" />
+    <None Include="wwwroot\img\proy2.PNG" />
+    <None Include="wwwroot\img\proy3.PNG" />
+    <None Include="wwwroot\img\sql.png" />
+  </ItemGroup>
+
 </Project>

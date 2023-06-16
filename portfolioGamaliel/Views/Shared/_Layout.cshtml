@@ -10,38 +10,89 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">portfolioGamaliel</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
+        <div class="container-fluid">
+        <div class="row " style="background-image:url('img/fondo2w.png');background-color: #00486C;">
+            <div class="row justify-content-center pt-4 pb-4">
+                <div class="col-md-3 col-sm-4 col-lg-2 col-6">
+                    <img src="img/prog.webp" class="img-fluid" alt="">
+                </div>
+                <div class="row">
+                    <h1 class="d-flex justify-content-center" style="color: white;">Martin Gamaliel Delgado Hernandez</h1>
+                </div>
+                <div class="row">
+                    <p class="d-flex justify-content-center lead" style="color: white;">COMPUTER ENGINEER</p>
                 </div>
             </div>
-        </nav>
-    </header>
+        </div>     
+    </div>
+    <nav  class="navbar sticky-top navbar-expand-lg  navbar-dark pb-4"  id="menu" style="background-color: #00486C;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+              <span class="fs-5 fw-bold" style="color: white;">Gamaliel Delgado</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target=".nav-collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-5 mb-lg-0">
+              <li class="nav-item m-1" href="#">
+                <a href="#proyectos" class="btn btn-outline-light">
+                  Projects
+                </a>
+              </li>
+              <li class="nav-item m-1">
+                <a href="#skills" class="btn btn-outline-light">
+                  Skills
+                </a>
+              </li>
+              <li class="nav-item m-1">
+                <a href="#sobremi" class="btn btn-outline-light">
+                  About me
+                </a>
+              </li>
+              <li class="nav-item m-1">
+                  <a href="#contacto" class="btn btn-outline-light">
+                      Contact
+                  </a>
+                </li>
+                <li class="nav-item m-1">
+                  <a href="cvc.pdf" download="cvMartinDelgado" class="btn btn-outline-light">
+                    Download cv
+                  </a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+            </header>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - portfolioGamaliel - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        
+    <div class="footer container-fluid" id="contacto">
+      <div class="container-fluid p-1 rounded-top" style="background-color: #00486C;">
+        <div class="container-sm">
+          <div class="row pt-3 pb-3">
+            <div class="col-6 my-auto">
+              <h3 class="" style="color: white;">Contact</h3>
+            </div>
+            <div class="col-6  my-auto">
+              <a href="mailto:gamadelgado60@gmail.com" class="btn btn-outline-light m-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <br><br>
+        <h6 class="" style="color: white;">Designed and developed by Gamaliel Delgado © 2022 All rights reserved.
+          </h6>
+      </div> 
+    </div>
+       <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
